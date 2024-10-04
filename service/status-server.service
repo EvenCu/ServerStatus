@@ -2,7 +2,7 @@
 Description=ServerStatus-Server
 After=network.target
 [Service]
-ExecStart=/usr/local/ServerStatus/server/sergate --config=/usr/local/ServerStatus/server/config.json --web-dir=/usr/local/ServerStatus/web
+ExecStart=/home/wwwroot/ServerStatus/server/sergate --config=/home/wwwroot/ServerStatus/server/config.json --web-dir=/home/wwwroot/ServerStatus/web
 ExecReload=/bin/kill -HUP $MAINPID
 Restart=on-failure
 [Install]
